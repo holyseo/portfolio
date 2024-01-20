@@ -4,7 +4,7 @@ export function Navigation() {
       <div className=" my-auto pl-5">
         <img className=" h-16" src={"src/assets/logo.png"} />
       </div>
-      <div className=" flex flex-row justify-end my-auto justify-self-center">
+      <div className=" flex flex-row  my-auto ">
         <div className=" px-5">Home</div>
         <div className=" px-5">Projects</div>
         <div className=" px-5">Experience</div>
