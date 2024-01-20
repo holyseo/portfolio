@@ -1,14 +1,14 @@
 export function Navigation() {
   return (
-    <div className=" grid grid-cols-3 whitespace-nowrap text-white h-24 bg-neutral-700 bg-opacity-20 text-normal font-light tracking-wider min-w-96">
-      <div className=" col-span-1 m-auto ">
+    <div className="flex flex-row justify-center gap-x-48 gap-y-8 h-auto py-5 flex-wrap  whitespace-nowrap text-white bg-neutral-700 bg-opacity-20 text-normal font-light tracking-wider">
+      <div className=" my-auto pl-5">
         <img className=" h-16" src={"src/assets/logo.png"} />
       </div>
-      <div className=" col-span-2 flex flex-row justify-evenly my-auto">
-        <div className=" min-w-fit px-2">Home</div>
-        <div className=" min-w-fit px-2">Projects</div>
-        <div className=" min-w-fit px-2">Experience</div>
-        <div className=" min-w-fit px-2">Contact</div>
+      <div className=" flex flex-row justify-end my-auto justify-self-center">
+        <div className=" px-5">Home</div>
+        <div className=" px-5">Projects</div>
+        <div className=" px-5">Experience</div>
+        <div className=" px-5">Contact</div>
       </div>
     </div>
   );
