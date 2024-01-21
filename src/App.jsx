@@ -5,15 +5,27 @@ import { Main } from "./components/Main";
 import { Navigation } from "./components/Navigation";
 import { Projects } from "./components/Projects";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className=" bg-neutral-900">
-      <Navigation />
-      <Main />
-      <Projects />
-      <Experience />
-      <Contact />
-    </div>
+    <BrowserRouter>
+      <div className=" bg-neutral-900">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+        <Routes>
+          <Route path="/" element={<Projects />} />
+        </Routes>
+        <Routes>
+          <Route path="/" element={<Experience />} />
+        </Routes>
+        <Routes>
+          <Route path="/" element={<Contact />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

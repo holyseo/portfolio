@@ -1,7 +1,10 @@
 export function Contact() {
   return (
     <footer>
-      <div className="grid grid-cols-5  w-full p-14 bg-neutral-700 bg-opacity-20 shadow mt-20  ">
+      <div
+        id="contact"
+        className="grid grid-cols-5  w-full p-14 bg-neutral-700 bg-opacity-20 shadow mt-20  "
+      >
         <div className=" col-span-1 "></div>
         <div className=" col-span-3 text-white">
           <span className=" text-3xl font-bold">Contact</span>
