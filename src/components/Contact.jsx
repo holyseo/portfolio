@@ -3,10 +3,10 @@ export function Contact() {
     <footer>
       <div
         id="contact"
-        className="grid grid-cols-5  w-full p-14 bg-neutral-700 bg-opacity-20 shadow mt-20  "
+        className="grid grid-cols-5 place-items-center w-full p-14 bg-neutral-700 bg-opacity-20 shadow mt-20  "
       >
         <div className=" col-span-1 "></div>
-        <div className=" col-span-3 text-white">
+        <div className=" col-span-2 text-white">
           <span className=" text-3xl font-bold">Contact</span>
           <div className="text-md py-8 max-w-4xl">
             I am highly skilled and committed to becoming a successful Software
@@ -39,6 +39,7 @@ export function Contact() {
             </div>
           </div>
         </div>
+        <div className="col-span-2 text-white"></div>
       </div>
     </footer>
   );
