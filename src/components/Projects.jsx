@@ -48,14 +48,14 @@ export function Projects() {
   return (
     <div
       id="projects"
-      className="flex flex-col place-items-center my-24 text-white text-2xl"
+      className="flex flex-col place-items-center my-24 text-white text-2xl px-3"
     >
       <div className=" bg-gradient-to-b from-orange-600 from-30% via-90% to-orange-400 bg-clip-text text-transparent uppercase font-extrabold text-3xl">
         Projects
       </div>
-      <div className="text-lg px-2 text-stone-400 py-5 max-w-5xl">
+      <div className=" bg-white rounded-xl text-base mt-8 text-stone-400 py-3 max-w-5xl">
         <Tabs value={activeTab} orientation="vertical">
-          <TabsHeader className="w-32  mx-5 cursor-pointer bg-slate-200 min-w-40 px-3">
+          <TabsHeader className="w-32  mx-2 cursor-pointe min-w-32">
             {data.map(({ label, value }) => (
               <Tab
                 key={value}
@@ -63,8 +63,8 @@ export function Projects() {
                 onClick={() => setActiveTab(value)}
                 className={
                   activeTab === value
-                    ? "bg-gray-200 border-4 border-gray-300 rounded-lg my-2 p-3 text-gray-800  text-2xl font-semibold font-mono tracking-wider"
-                    : "hover:bg-sky-500 rounded-lg p-3 text-white text-md tracking-wider"
+                    ? " bg-gray-700 rounded-lg my-2 p-2 text-white font-semibold"
+                    : " p-3 text-black text-md tracking-wider"
                 }
               >
                 {label}
@@ -76,7 +76,7 @@ export function Projects() {
               <TabPanel
                 key={value}
                 value={value}
-                className=" p-4 rounded-2xl text-gray-200 bg-orange-600 bg-opacity-80 "
+                className=" p-5 rounded-2xl text-gray-800 text-left "
               >
                 {desc}
               </TabPanel>

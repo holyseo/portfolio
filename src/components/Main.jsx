@@ -13,23 +13,23 @@ export function Main() {
                 {} Steven
               </span>
               <span>.</span>
-              <p className="py-8 leading-normal">
-                A fullstack developer building bridges between
-                <span className=" bg-gradient-to-r from-lime-500 from-20% via-60% to-orange-400 bg-clip-text text-transparent">
-                  {} imagination
-                </span>
-                {} and
-                <span className=" bg-gradient-to-r from-blue-300 from-20% via-60% to-pink-700 bg-clip-text text-transparent">
-                  {} innvoation
-                </span>
-                {} through cutting-edge software and web development
-              </p>
+            </p>
+            <p className=" leading-normal">
+              A fullstack developer building bridges between
+              <span className=" bg-gradient-to-r from-lime-500 from-20% via-60% to-orange-400 bg-clip-text text-transparent">
+                {} imagination
+              </span>
+              {} and
+              <span className=" bg-gradient-to-r from-blue-300 from-20% via-60% to-pink-700 bg-clip-text text-transparent">
+                {} innvoation
+              </span>
+              {} through cutting-edge software and web development
             </p>
           </div>
         </div>
       </div>
 
-      <div className=" max-w-3xl mx-auto text-gray-300 px-5 text-center text-lg font-light tracking-wider leading-7">
+      <div className="py-8 max-w-3xl mx-auto text-gray-300 px-5 text-center text-lg font-light tracking-wider leading-7">
         Following a successful career in the NGO and Pharmacy sectors, I am now
         seeking a career in Software Development. My academic achievements
         include a Bachelor’s and Master’s degree in Information Science and a

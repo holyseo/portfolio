@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Projects />} />
         </Routes>
+
         <Routes>
           <Route path="/" element={<Experience />} />
         </Routes>
