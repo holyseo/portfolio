@@ -17,15 +17,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={`bg-neutral-900 ${darkMode ? "" : " bg-gray-500"}`}>
+      <div className={`${darkMode ? "bg-neutral-900 " : " bg-gray-600"}`}>
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
         <Routes>
-          <Route path="/" element={<Projects />} />
+          <Route path="/" element={<Projects darkMode={darkMode} />} />
         </Routes>
-
         <Routes>
           <Route path="/" element={<Experience />} />
         </Routes>

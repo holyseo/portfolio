@@ -13,10 +13,8 @@ export function Experience() {
       <div className=" text-lg text-slate-300 max-w-6xl items-start mt-12 px-16 ">
         <div className=" flex flex-col gap-3 mb-16">
           <div className="flex flex-row justify-between items-start w-3xl gap-40 border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row justify-start gap-10 ">
-              <div className="text-red-600 font-extrabold text-lg">
-                Northcoders
-              </div>
+            <div className="flex flex-row place-items-start gap-10 ">
+              <div className="text-red-600 font-bold text-xl">Northcoders</div>
               <div className="font-bold ">
                 Junior Full-Stack Software Developer
               </div>
@@ -50,8 +48,8 @@ export function Experience() {
         </div>
         <div className=" flex flex-col gap-3 mb-16">
           <div className="flex flex-row justify-between items-start gap-40 border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row justify-start gap-10 ">
-              <div className="text-amber-500 font-extrabold text-lg">
+            <div className="flex flex-row place-items-start gap-10 ">
+              <div className="text-amber-500 font-bold text-xl">
                 Relational Peacebuilding Inititives
               </div>
               <div className="font-bold ">Korea Program Manager</div>
@@ -78,14 +76,14 @@ export function Experience() {
           </div>
         </div>
         <div className=" flex flex-col gap-3 mb-16">
-          <div className="flex flex-row justify-between items-start w-3xl gap-40 border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row justify-start gap-10 ">
-              <div className=" text-sky-600 font-extrabold text-lg">
+          <div className="flex flex-row justify-between items-start gap-40 border-b-2 border-white border-opacity-50 py-2">
+            <div className="flex flex-row place-items-start gap-10 ">
+              <div className=" text-sky-600 font-bold text-xl">
                 Career break
               </div>
               <div className="font-bold ">
-                Relocated to the UK wiht family from New Zealand
-                <span className="text-2xl self-end ">🇳🇿</span>
+                Relocated to the UK with family from New Zealand
+                <span className="text-2xl brightness-150 self-end ">🇳🇿</span>
               </div>
             </div>
             <div className="w-fit text-sm">January 2016 to December 2018</div>
@@ -101,8 +99,8 @@ export function Experience() {
         </div>
         <div className=" flex flex-col gap-3 my-5">
           <div className="flex flex-row justify-between items-start gap-40 border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row justify-start w-3xl gap-10 ">
-              <div className="text-green-700 font-extrabold text-lg">
+            <div className="flex flex-row place-items-start gap-10 ">
+              <div className="text-green-700 font-bold text-xl">
                 Community Pharmacy
               </div>
               <div className="font-bold ">Pharmacist</div>

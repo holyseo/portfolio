@@ -21,7 +21,7 @@ export function Main() {
               </span>
               {} and
               <span className=" bg-gradient-to-r from-blue-300 from-20% via-60% to-pink-700 bg-clip-text text-transparent">
-                {} innvoation
+                {} innovation
               </span>
               {} through cutting-edge software and web development
             </p>
@@ -51,7 +51,7 @@ export function Main() {
       </div>
       <div className="flex flex-col items-center ">
         <div className="py-16 uppercase text-stone-300 text-2xl font-bold tracking-widest">
-          <span className=" bg-gradient-to-r from-amber-200 from-10% via-40% to-blue-300 bg-clip-text text-transparent">
+          <span className=" bg-gradient-to-r from-amber-500 from-10% via-40% to-sky-500 bg-clip-text text-transparent">
             Experience with:
           </span>
         </div>
