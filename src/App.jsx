@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import { Contact } from "./components/Contact";
 import { Experience } from "./components/Experience";
@@ -8,10 +9,16 @@ import { Projects } from "./components/Projects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  function toggleDarkMode() {
+    setDarkMode((prev) => !prev);
+  }
+
   return (
     <BrowserRouter>
-      <div className=" bg-neutral-900">
-        <Navigation />
+      <div className={`bg-neutral-900 ${darkMode ? "" : " bg-gray-500"}`}>
+        <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
