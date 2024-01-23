@@ -26,23 +26,23 @@ export function Experience() {
           <div className=" font-light tracking-wide">
             Gained hands-on experience in full-stack software development with
             JavaScript
-            <ul>
+            <ul className=" indent-(-10) pl-10">
               <li className="py-3 font-semibold underline">Frontend</li>
-              <li className=" indent-5 list-disc list-inside ">
+              <li className=" list-disc list-outside ">
                 Implemented user interfaces using ReactJS and CSS
               </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className="list-disc list-outside">
                 Used industry methodologies such as test-driven development &
                 agile project management
               </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className="list-disc list-outside">
                 Developed technical skills in remote development and pair
                 programming
               </li>
             </ul>
-            <ul>
+            <ul className=" indent-(-10) pl-10">
               <li className="py-3 font-semibold underline">Backend</li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className="list-disc list-outside">
                 Created REST APIs using Express and PSQL with MVC model
               </li>
             </ul>
@@ -59,18 +59,18 @@ export function Experience() {
             <div className="w-fit text-sm">June 2020 to October 2023</div>
           </div>
           <div className=" font-light tracking-wide">
-            <ul>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+            <ul className=" indent-(-10) pl-10">
+              <li className=" list-disc list-outside">
                 Facilitated the CEO in scheduling and preparing for
                 international travel to meet with senior government officials in
                 various countries, including Korea, the United States,
                 Switzerland, Mongolia, and more.
               </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className=" list-disc list-outside">
                 Managed and supervised all IT-related matters, including website
                 development, maintenance and cybersecurity
               </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className=" list-disc list-outside">
                 Liaised with networks among Koreans in the UK to increase
                 financial support for the organisation
               </li>
@@ -85,24 +85,16 @@ export function Experience() {
               </div>
               <div className="font-bold ">
                 Relocated to the UK wiht family from New Zealand
-                <span className="text-3xl self-end ">🇳🇿</span>
+                <span className="text-2xl self-end ">🇳🇿</span>
               </div>
             </div>
             <div className="w-fit text-sm">January 2016 to December 2018</div>
           </div>
           <div className=" font-light tracking-wide">
-            <ul>
-              <li className=" indent-(-10) pl-5  list-disc list-inside ">
-                Advised customers on the recommended dosage, warnings, storage,
-                and possible side effects of all dispensed medication
-              </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
-                Assisted customers with the purchase of Over-The-Counter (OTC)
-                medications
-              </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
-                Placed orders to replenish stock of equipment, medication,
-                supplies, etc
+            <ul className=" indent-(-10) pl-10">
+              <li className=" list-disc list-outside ">
+                Relocated to Cambridge from New Zealand to support my wife's job
+                at the University
               </li>
             </ul>
           </div>
@@ -118,16 +110,16 @@ export function Experience() {
             <div className="w-fit text-sm">January 2016 to December 2018</div>
           </div>
           <div className=" font-light tracking-wide">
-            <ul>
-              <li className=" indent-(-10) pl-5  list-disc list-inside ">
+            <ul className=" indent-(-10) pl-10">
+              <li className=" list-disc list-outside ">
                 Advised customers on the recommended dosage, warnings, storage,
                 and possible side effects of all dispensed medication
               </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className="list-disc list-outside">
                 Assisted customers with the purchase of Over-The-Counter (OTC)
                 medications
               </li>
-              <li className=" indent-(-10) pl-5 list-disc list-inside">
+              <li className="list-disc list-outside">
                 Placed orders to replenish stock of equipment, medication,
                 supplies, etc
               </li>
