@@ -2,52 +2,48 @@ export function Experience() {
   return (
     <div
       id="experience"
-      className="flex flex-col place-items-center text-white text-2xl"
+      className="flex flex-col bg-red place-items-center text-white text-2xl"
     >
-      <div>
-        <span className=" bg-gradient-to-b from-blue-600 from-30% via-90% to-blue-400 bg-clip-text text-transparent uppercase font-extrabold text-3xl">
-          Experience
-        </span>
+      <div className=" mb-16 bg-gradient-to-b from-blue-600 from-30% via-90% to-blue-400 bg-clip-text text-transparent uppercase font-extrabold text-3xl">
+        Experience
       </div>
 
-      <div className=" text-lg text-slate-300 max-w-6xl items-start mt-12 px-16 ">
-        <div className=" flex flex-col gap-3 mb-16">
-          <div className="flex flex-row justify-between items-start w-3xl gap-40 border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row place-items-start gap-10 ">
-              <div className="text-red-600 font-bold text-xl">Northcoders</div>
-              <div className="font-bold ">
-                Junior Full-Stack Software Developer
-              </div>
+      <div className=" flex flex-col gap-3 max-w-6xl px-2 text-lg">
+        <div className="flex flex-row flex-wrap justify-between items-start border-b-2 border-white border-opacity-50 p-2">
+          <div className="flex flex-row flex-wrap place-items-start gap-10 ">
+            <div className="text-red-600 font-bold text-xl">Northcoders</div>
+            <div className="font-bold ">
+              Junior Full-Stack Software Developer
             </div>
-            <div className="w-fit text-sm">October 2023 to Current</div>
           </div>
-          <div className=" font-light tracking-wide">
-            Gained hands-on experience in full-stack software development with
-            JavaScript
-            <ul className=" indent-(-10) pl-10">
-              <li className="py-3 font-semibold underline">Frontend</li>
-              <li className=" list-disc list-outside ">
-                Implemented user interfaces using ReactJS and CSS
-              </li>
-              <li className="list-disc list-outside">
-                Used industry methodologies such as test-driven development &
-                agile project management
-              </li>
-              <li className="list-disc list-outside">
-                Developed technical skills in remote development and pair
-                programming
-              </li>
-            </ul>
-            <ul className=" indent-(-10) pl-10">
-              <li className="py-3 font-semibold underline">Backend</li>
-              <li className="list-disc list-outside">
-                Created REST APIs using Express and PSQL with MVC model
-              </li>
-            </ul>
-          </div>
+          <div className="w-fit text-sm">October 2023 to Current</div>
         </div>
-        <div className=" flex flex-col gap-3 mb-16">
-          <div className="flex flex-row justify-between items-start gap-40 border-b-2 border-white border-opacity-50 py-2">
+        <div className=" font-light tracking-wide min-w-fit">
+          Gained hands-on experience in full-stack software development with
+          JavaScript
+          <ul className=" indent-(-10) pl-10">
+            <li className="py-3 font-semibold underline">Frontend</li>
+            <li className=" list-disc list-outside ">
+              Implemented user interfaces using ReactJS and CSS
+            </li>
+            <li className="list-disc list-outside">
+              Used industry methodologies such as test-driven development &
+              agile project management
+            </li>
+            <li className="list-disc list-outside">
+              Developed technical skills in remote development and pair
+              programming
+            </li>
+          </ul>
+          <ul className=" indent-(-10) pl-10">
+            <li className="py-3 font-semibold underline">Backend</li>
+            <li className="list-disc list-outside">
+              Created REST APIs using Express and PSQL with MVC model
+            </li>
+          </ul>
+        </div>
+        <div className=" flex flex-col gap-3 mb-6">
+          <div className="flex flex-row justify-between items-start gap-4 border-b-2 border-white border-opacity-50 py-2 my-5">
             <div className="flex flex-row place-items-start gap-10 ">
               <div className="text-amber-500 font-bold text-xl">
                 Relational Peacebuilding Inititives
@@ -75,8 +71,8 @@ export function Experience() {
             </ul>
           </div>
         </div>
-        <div className=" flex flex-col gap-3 mb-16">
-          <div className="flex flex-row justify-between items-start gap-40 border-b-2 border-white border-opacity-50 py-2">
+        <div className=" flex flex-col gap-3 mb-6">
+          <div className="flex flex-row justify-between items-start  border-b-2 border-white border-opacity-50 py-2">
             <div className="flex flex-row place-items-start gap-10 ">
               <div className=" text-sky-600 font-bold text-xl">
                 Career break
@@ -98,7 +94,7 @@ export function Experience() {
           </div>
         </div>
         <div className=" flex flex-col gap-3 my-5">
-          <div className="flex flex-row justify-between items-start gap-40 border-b-2 border-white border-opacity-50 py-2">
+          <div className="flex flex-row justify-between items-start border-b-2 border-white border-opacity-50 py-2">
             <div className="flex flex-row place-items-start gap-10 ">
               <div className="text-green-700 font-bold text-xl">
                 Community Pharmacy

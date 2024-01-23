@@ -21,14 +21,14 @@ export function Projects({ darkMode }) {
     },
     {
       label: "Real-time Messenger",
-      value: "react",
+      value: "realtime",
       desc: `Because it's about motivating the doers. Because I'm here
           to follow my dreams and inspire other people to follow their dreams, too.`,
       src: "src/assets/realtime_chat.png",
     },
     {
       label: "Music Player",
-      value: "vue",
+      value: "music",
       desc: `We're not always in the position that we want to be at.
           We're constantly growing. We're constantly making mistakes. We're
           constantly trying to express ourselves and actualize our dreams.`,
@@ -42,12 +42,20 @@ export function Projects({ darkMode }) {
       src: "src/assets/music_player.png",
     },
     {
-      label: "WordPress",
-      value: "svelte",
+      label: "Messenger UI Screen",
+      value: "messenger",
       desc: `We're not always in the position that we want to be at.
           We're constantly growing. We're constantly making mistakes. We're
           constantly trying to express ourselves and actualize our dreams.`,
-      src: "src/assets/music_player.png",
+      src: "src/assets/messenger.png",
+    },
+    {
+      label: "WordPress",
+      value: "wordpress",
+      desc: `We're not always in the position that we want to be at.
+          We're constantly growing. We're constantly making mistakes. We're
+          constantly trying to express ourselves and actualize our dreams.`,
+      src: "src/assets/wp_collection.png",
     },
   ];
 
@@ -60,12 +68,12 @@ export function Projects({ darkMode }) {
         Projects
       </div>
       <div
-        className={` font-mono rounded-xl text-base mt-8 text-stone-400 p-3 max-w-7xl ${
+        className={` font-mono rounded-xl text-base mt-8 text-stone-400 p-3 max-w-6xl ${
           darkMode ? "bg-slate-300" : "bg-white"
         }`}
       >
         <div className="flex flex-col">
-          <div className="flex flex-row flex-wrap place-items-center justify-center px-5 gap-x-14 cursor-pointe border-b-2 border-gray-600 border-opacity-30">
+          <div className="flex flex-row flex-wrap place-items-center justify-center tracking-tight px-5 gap-x-5 cursor-pointe border-b-2 border-gray-600 border-opacity-30">
             {data.map(({ label, value }) => (
               <div
                 key={value}
@@ -89,11 +97,11 @@ export function Projects({ darkMode }) {
                   value={value}
                   className=" p-3 rounded-2xl text-gray-800 text-left"
                 >
-                  <div className="flex flex-row flex-wrap justify-center gap-3">
-                    <div className="p-2 max-w-md">
+                  <div className="flex flex-row flex-wrap justify-center">
+                    <div className="p-3 max-w-lg">
                       <img src={src} alt="" className="rounded-2xl " />
                     </div>
-                    <div className="p-2 max-w-3xl">{desc}</div>
+                    <div className="p-3 max-w-xl">{desc}</div>
                   </div>
                 </div>
               ) : null
