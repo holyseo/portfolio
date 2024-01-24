@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"/portfolio"}>
       <div className={`${darkMode ? "bg-neutral-900 " : " bg-gray-600"}`}>
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
