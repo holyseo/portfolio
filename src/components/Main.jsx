@@ -1,4 +1,18 @@
 export function Main() {
+  const img_src = [
+    "JS.svg",
+    "TS.png",
+    "node_js.jpg",
+    "React.png",
+    "HTML5.png",
+    "CSS.png",
+    "Tailwind_css.png",
+    "github.png",
+    "WordPress.png",
+    "psql.png",
+    "mongodb.png",
+  ];
+
   return (
     <div>
       <div className=" max-w-5xl mx-auto px-14 flex flex-col pt-12 place-items-center gap-5">
@@ -57,83 +71,15 @@ export function Main() {
         </div>
 
         <div className="flex flex-row flex-wrap justify-center text-stone-300 gap-x-10 gap-y-3 px-16">
-          <div className="grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white rounded-lg"
-              src="./src/assets/JS.svg"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white rounded-lg"
-              src="./src/assets/TS.png"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white rounded-lg"
-              src="./src/assets/node_js.jpg"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white rounded-lg"
-              src="./src/assets/React.png"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" bg-white p-1 h-14 rounded-lg"
-              src="./src/assets/HTML5.png"
-              alt=""
-            />
-          </div>
-          <div className="  grayscale hover:grayscale-0 p-1">
-            <img
-              className=" bg-white rounded-lg h-14"
-              src="./src/assets/CSS.png"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white rounded-lg"
-              src="./src/assets/Tailwind_css.png"
-              alt=""
-            />
-          </div>
-          <div className=" rounded-lg p-1">
-            <img
-              className=" h-14 bg-white p-1 rounded-lg"
-              src="./src/assets/github.png"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white p-1 rounded-lg"
-              src="./src/assets/WordPress.png"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white p-1 rounded-lg"
-              src="./src/assets/psql.png"
-              alt=""
-            />
-          </div>
-          <div className=" grayscale hover:grayscale-0 rounded-lg p-1">
-            <img
-              className=" h-14 bg-white p-1 rounded-lg"
-              src="./src/assets/mongodb.png"
-              alt=""
-            />
-          </div>
+          {img_src.map((i) => (
+            <div className="grayscale hover:grayscale-0 hover:scale-125 duration-200 rounded-lg">
+              <img
+                className=" w-12 bg-white rounded-lg p-0.5"
+                src={`./src/assets/${i}`}
+                alt=""
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
