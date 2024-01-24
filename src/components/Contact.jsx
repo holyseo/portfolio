@@ -7,7 +7,7 @@ export function Contact() {
       >
         <div className=" col-span-1 "></div>
         <div className=" col-span-3 text-white">
-          <span className=" text-3xl font-bold">Contact</span>
+          <span className=" text-5xl font-bold">Contact</span>
           <div className="text-md py-8 max-w-4xl">
             I am highly skilled and committed to becoming a successful Software
             Developer. I have gained valuable experience and knowledge in
