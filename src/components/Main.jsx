@@ -55,12 +55,16 @@ export function Main() {
       <div className="text-white grid grid-cols-5 py-10">
         <div></div>
         <div className="col-span-3 flex flex-row flex-wrap place-content-center justify-center gap-10 font-bold text-lg">
-          <button className=" border-white border-2 px-8 py-3 rounded-full bg-white text-black">
-            Get In Touch
-          </button>
-          <button className=" border-white border-2 px-8 py-3 rounded-full ">
-            Download CV
-          </button>
+          <a href="mailto:stevenbseo@icloud.com">
+            <button className=" border-white border-2 px-8 py-3 rounded-full bg-white text-black">
+              Get In Touch
+            </button>
+          </a>
+          <a href=".src/assets/Steven_Seo_CV_Portfolio" download>
+            <button className=" border-white border-2 px-8 py-3 rounded-full ">
+              Download CV
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col items-center ">
@@ -72,10 +76,7 @@ export function Main() {
 
         <div className="flex flex-row flex-wrap justify-center text-stone-300 gap-x-10 gap-y-3 px-16">
           {img_src.map((i, index) => (
-            <div
-              key={index}
-              className="grayscale hover:grayscale-0 hover:scale-125 duration-200 rounded-lg"
-            >
+            <div key={index} className=" hover:animate-pulse rounded-lg">
               <img
                 className=" w-12 bg-white rounded-lg p-0.5"
                 src={`./src/assets/${i}`}

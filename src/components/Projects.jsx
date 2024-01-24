@@ -1,9 +1,40 @@
 import { useState } from "react";
 
 export function Projects({ darkMode }) {
-  const [activeTab, setActiveTab] = useState("movie");
+  const [activeTab, setActiveTab] = useState("news");
 
   const data = [
+    {
+      label: "News App",
+      value: "news",
+      desc: (
+        <>
+          : <span className="underline underline-offset-2">Full-stack </span>{" "}
+          software was developed as part of my Northcoders Software Development
+          Bootcamp. It is a user-friendly React application designed for
+          exploring news articles. Users can easily browse through a list of
+          articles, filter them by topic, and customise the display with sorting
+          options."
+        </>
+      ),
+      skills: `: JavaScript, React, NodeJS, ExpressJS, PSQL, REST API, Jest, HTML and CSS`,
+      src: "src/assets/news.png",
+      ref_links: (
+        <>
+          :
+          <span className=" text-blue-600 font-bold">
+            <a href="https://github.com/holyseo/news-api" target="_blank">
+              {" "}
+              News API,
+            </a>
+            <a href="https://github.com/holyseo/react-movies" target="_blank">
+              {" "}
+              News Frontend
+            </a>
+          </span>
+        </>
+      ),
+    },
     {
       label: "TMDB Movie Explorer",
       value: "movie",
@@ -19,6 +50,16 @@ export function Projects({ darkMode }) {
       ),
       skills: ": JavaScript, React, TMDB API, HTML and CSS",
       src: "src/assets/movie_api.jpg",
+      ref_links: (
+        <>
+          :
+          <span className=" text-blue-600 font-bold">
+            <a href="https://github.com/holyseo/react-movies" target="_blank">
+              {} Movie Explorer
+            </a>
+          </span>
+        </>
+      ),
     },
     {
       label: "Real-time Chat",
@@ -40,6 +81,16 @@ export function Projects({ darkMode }) {
       skills:
         ": JavaScript, React, Socket.IO, NodeJS, ExpressJS, HTML and TailwindCSS",
       src: "src/assets/realtime_chat.png",
+      ref_links: (
+        <>
+          :
+          <span className=" text-blue-600 font-bold">
+            <a href="https://github.com/holyseo/react-movies" target="_blank">
+              {} Realtime chat
+            </a>
+          </span>
+        </>
+      ),
     },
     {
       label: "Music Player",
@@ -62,22 +113,19 @@ export function Projects({ darkMode }) {
       ),
       skills: ": HTML and CSS",
       src: "src/assets/music_player.png",
-    },
-    {
-      label: "News App",
-      value: "news",
-      desc: (
+      ref_links: (
         <>
-          : <span className="underline underline-offset-2">Full-stack </span>{" "}
-          software was developed as part of my Northcoders Software Development
-          Bootcamp. It is a user-friendly React application designed for
-          exploring news articles. Users can easily browse through a list of
-          articles, filter them by topic, and customise the display with sorting
-          options."
+          :
+          <span className=" text-blue-600 font-bold">
+            <a
+              href="https://replit.com/@holyseo/NomadChallenge02-03June2023-1"
+              target="_blank"
+            >
+              {} Music Player UI
+            </a>
+          </span>
         </>
       ),
-      skills: `: JavaScript, React, NodeJS, ExpressJS, PSQL, REST API, Jest, HTML and CSS`,
-      src: "src/assets/news.png",
     },
     {
       label: "Messenger UI",
@@ -92,6 +140,19 @@ export function Projects({ darkMode }) {
         </>
       ),
       skills: ": HTML and CSS",
+      ref_links: (
+        <>
+          :
+          <span className=" text-blue-600 font-bold">
+            <a
+              href="https://holyseo.github.io/kokoa-clone-2023/"
+              target="_blank"
+            >
+              {} Messenger UI
+            </a>
+          </span>
+        </>
+      ),
       src: "src/assets/messenger.png",
     },
     {
@@ -107,6 +168,32 @@ export function Projects({ darkMode }) {
         </>
       ),
       skills: ": WordPress, custom plugins, HTML and CSS",
+      ref_links: (
+        <>
+          :
+          <ul className=" text-blue-600 font-bold my-1">
+            <li>
+              <a href="https://www.relationalpeacebuilding.org" target="_blank">
+                {} - Ralational Peacebuilding Initiatives
+              </a>
+            </li>
+          </ul>
+          <ul className=" text-blue-600 font-bold my-1">
+            <li>
+              <a href="https://www.relationalresearch.org" target="_blank">
+                {} - Ralational Research
+              </a>
+            </li>
+          </ul>
+          <ul className=" text-blue-600 font-bold my-1">
+            <li>
+              <a href="https://www.the-relationist.net" target="_blank">
+                {} - Ralationist
+              </a>
+            </li>
+          </ul>
+        </>
+      ),
       src: "src/assets/wp_collection.png",
     },
   ];
@@ -139,7 +226,7 @@ export function Projects({ darkMode }) {
             ))}
           </div>
           <div className="my-6">
-            {data.map(({ value, desc, src, skills }) =>
+            {data.map(({ value, desc, src, skills, ref_links }) =>
               activeTab === value ? (
                 <div
                   key={value}
@@ -147,11 +234,11 @@ export function Projects({ darkMode }) {
                   className=" p-3 rounded-2xl text-gray-800 text-left"
                 >
                   <div className="flex flex-row flex-wrap justify-center">
-                    <div className="p-3 max-w-lg hover:scale-125 duration-700">
+                    <div className="p-3 max-w-lg hover:scale-110 duration-700">
                       <img
                         src={src}
                         alt=""
-                        className="rounded-2xl drop-shadow-2xl "
+                        className="rounded-lg drop-shadow-2xl "
                       />
                     </div>
                     <div className="p-3 max-w-xl flex flex-col gap-6 text-sm">
@@ -166,6 +253,10 @@ export function Projects({ darkMode }) {
                           Tech stacks
                         </span>
                         {skills}
+                      </div>
+                      <div>
+                        <span className=" font-extrabold text-base">Links</span>
+                        {ref_links}
                       </div>
                     </div>
                     <div className="p-3 max-w-xl"></div>

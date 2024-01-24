@@ -17,25 +17,31 @@ export function Contact() {
 
           <div className=" max-w-16 flex flex-row justify-start gap-3">
             <div>
-              <img
-                className="max-w-8"
-                src="./src/assets/LinkedIn_icon_circle.svg.png"
-                alt="LinkedIn"
-              />
+              <a href="https://www.linkedin.com/in/steven-seo/" target="_blank">
+                <img
+                  className="max-w-8"
+                  src="./src/assets/LinkedIn_icon_circle.svg.png"
+                  alt="LinkedIn"
+                />
+              </a>
             </div>
             <div className="rounded-full ">
-              <img
-                className="max-w-8 rounded-full"
-                src="./src/assets/github-mark-white.png"
-                alt="GitHub"
-              />
+              <a href="https://github.com/holyseo" target="_blank">
+                <img
+                  className="max-w-8 rounded-full"
+                  src="./src/assets/github-mark-white.png"
+                  alt="GitHub"
+                />
+              </a>
             </div>{" "}
             <div className="rounded-full ">
-              <img
-                className="max-w-8 rounded-full"
-                src="./src/assets/Mail_(iOS).svg.png"
-                alt="GitHub"
-              />
+              <a href="mailto:stevenbseo@icloud.com">
+                <img
+                  className="max-w-8 rounded-full"
+                  src="./src/assets/Mail_(iOS).svg.png"
+                  alt="GitHub"
+                />
+              </a>
             </div>
           </div>
         </div>
