@@ -1,10 +1,3 @@
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
 import { useState } from "react";
 
 export function Projects({ darkMode }) {
@@ -119,11 +112,8 @@ export function Projects({ darkMode }) {
   ];
 
   return (
-    <div
-      id="projects"
-      className="flex flex-col place-items-center my-24 text-white text-2xl px-3"
-    >
-      <div className=" bg-gradient-to-b from-orange-600 from-30% via-90% to-orange-400 bg-clip-text text-transparent uppercase font-extrabold text-3xl">
+    <div id="projects" className="flex flex-col place-items-center my-24 px-3">
+      <div className=" bg-gradient-to-b from-orange-600 from-30% via-90% to-orange-400 bg-clip-text text-transparent uppercase font-extrabold text-5xl p-5">
         Projects
       </div>
       <div

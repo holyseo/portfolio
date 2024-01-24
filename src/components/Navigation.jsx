@@ -26,7 +26,7 @@ export function Navigation({ darkMode, toggleDarkMode }) {
         </div>
       </div>
       <div className="place-self-center grid grid-cols-4 w-4/5 justify-end ">
-        <div className=" col-start-5 col-end-6 bg-slate-300 max-w-14 rounded-full p-0.5 hover:bg-amber-400 animate-bounce hover:animate-none">
+        <div className=" col-start-5 col-end-6 bg-slate-300 max-w-14 rounded-full p-0.5 hover:bg-amber-400 animate-bounce duration:300 hover:animate-none">
           <img
             className="brightness-100"
             onClick={toggleDarkMode}

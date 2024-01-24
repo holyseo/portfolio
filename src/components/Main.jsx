@@ -64,15 +64,18 @@ export function Main() {
         </div>
       </div>
       <div className="flex flex-col items-center ">
-        <div className="py-16 uppercase text-stone-300 text-2xl font-bold tracking-widest">
-          <span className=" bg-gradient-to-r from-amber-500 from-10% via-40% to-sky-500 bg-clip-text text-transparent">
+        <div className="py-16 uppercase text-stone-300 font-bold tracking-widest">
+          <span className=" bg-gradient-to-r from-amber-500 from-10% via-40% to-sky-500 text-2xl bg-clip-text text-transparent">
             Experience with:
           </span>
         </div>
 
         <div className="flex flex-row flex-wrap justify-center text-stone-300 gap-x-10 gap-y-3 px-16">
-          {img_src.map((i) => (
-            <div className="grayscale hover:grayscale-0 hover:scale-125 duration-200 rounded-lg">
+          {img_src.map((i, index) => (
+            <div
+              key={index}
+              className="grayscale hover:grayscale-0 hover:scale-125 duration-200 rounded-lg"
+            >
               <img
                 className=" w-12 bg-white rounded-lg p-0.5"
                 src={`./src/assets/${i}`}

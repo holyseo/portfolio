@@ -2,9 +2,9 @@ export function Experience() {
   return (
     <div
       id="experience"
-      className="flex flex-col bg-red place-items-center text-white text-2xl"
+      className="flex flex-col bg-red place-items-center text-white"
     >
-      <div className=" mb-16 bg-gradient-to-b from-blue-600 from-30% via-90% to-blue-400 bg-clip-text text-transparent uppercase font-extrabold text-3xl">
+      <div className=" mb-16 bg-gradient-to-b from-blue-600 from-30% via-90% to-blue-400 bg-clip-text text-transparent uppercase font-extrabold text-5xl">
         Experience
       </div>
 
