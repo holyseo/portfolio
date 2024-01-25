@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://holyseo.github.io/",
+  "homepage": "https://holyseo.github.io/portfolio/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
