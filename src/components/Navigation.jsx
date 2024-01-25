@@ -5,9 +5,9 @@ export function Navigation({ darkMode, toggleDarkMode }) {
   return (
     <div className="flex flex-col text-white bg-neutral-700 bg-opacity-20 p-5">
       <div className="flex flex-row justify-center items-center gap-x-48 flex-wrap  text-normal font-light tracking-wider">
-        <div className=" pl-10">
+        <div>
           <Link to="/">
-            <img className=" h-16" src={"src/assets/logo.png"} />
+            <img className=" h-16" src="assets/logo.png" />
           </Link>
         </div>
         <div className=" grid grid-cols-4 justify-items-center gap-16 p-5 ">
@@ -25,16 +25,12 @@ export function Navigation({ darkMode, toggleDarkMode }) {
           </HashLink>
         </div>
       </div>
-      <div className="place-self-center grid grid-cols-4 w-4/5 justify-end ">
-        <div className=" col-start-5 col-end-6 bg-slate-300 max-w-14 rounded-full p-0.5 hover:bg-amber-400 animate-bounce duration:300 hover:animate-none">
+      <div className="flex flex-row justify-end 2xl:left-96 mt-5">
+        <div className=" bg-slate-300 max-w-14 rounded-full p-1 2xl:relative 2xl:right-1/4 hover:bg-amber-400 duration:300 ">
           <img
             className="brightness-100"
             onClick={toggleDarkMode}
-            src={
-              darkMode
-                ? "src/assets/dark-mode.png"
-                : "src/assets/light-mode.png"
-            }
+            src={darkMode ? "assets/dark-mode.png" : "assets/light-mode.png"}
             alt=""
           />
         </div>

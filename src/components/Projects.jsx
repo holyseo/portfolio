@@ -18,7 +18,7 @@ export function Projects({ darkMode }) {
         </>
       ),
       skills: `: JavaScript, React, NodeJS, ExpressJS, PSQL, REST API, Jest, HTML and CSS`,
-      src: "src/assets/news.png",
+      src: "assets/news.png",
       ref_links: (
         <>
           :
@@ -49,7 +49,7 @@ export function Projects({ darkMode }) {
         </>
       ),
       skills: ": JavaScript, React, TMDB API, HTML and CSS",
-      src: "src/assets/movie_api.jpg",
+      src: "assets/movie_api.jpg",
       ref_links: (
         <>
           :
@@ -80,7 +80,7 @@ export function Projects({ darkMode }) {
       ),
       skills:
         ": JavaScript, React, Socket.IO, NodeJS, ExpressJS, HTML and TailwindCSS",
-      src: "src/assets/realtime_chat.png",
+      src: "assets/realtime_chat.png",
       ref_links: (
         <>
           :
@@ -112,7 +112,7 @@ export function Projects({ darkMode }) {
         </>
       ),
       skills: ": HTML and CSS",
-      src: "src/assets/music_player.png",
+      src: "assets/music_player.png",
       ref_links: (
         <>
           :
@@ -153,7 +153,7 @@ export function Projects({ darkMode }) {
           </span>
         </>
       ),
-      src: "src/assets/messenger.png",
+      src: "assets/messenger.png",
     },
     {
       label: "WordPress",
@@ -194,13 +194,13 @@ export function Projects({ darkMode }) {
           </ul>
         </>
       ),
-      src: "src/assets/wp_collection.png",
+      src: "assets/wp_collection.png",
     },
   ];
 
   return (
     <div id="projects" className="flex flex-col place-items-center my-24 px-3">
-      <div className=" bg-gradient-to-b from-orange-600 from-30% via-90% to-orange-400 bg-clip-text text-transparent uppercase font-extrabold text-5xl p-5">
+      <div className=" bg-gradient-to-b from-orange-600 from-30% via-90% to-orange-400 bg-clip-text text-transparent uppercase font-extrabold text-2xl md:text-3xl xl:text-5xl p-5">
         Projects
       </div>
       <div
@@ -209,7 +209,7 @@ export function Projects({ darkMode }) {
         }`}
       >
         <div className="flex flex-col">
-          <div className="flex flex-row flex-wrap place-items-center justify-center tracking-tight px-5 gap-x-5 cursor-pointe border-b-2 pb-5 border-gray-600 border-opacity-30">
+          <div className="flex flex-row flex-wrap place-items-center justify-between tracking-tight px-5 gap-x-5 cursor-pointe border-b-2 pb-5 border-gray-600 border-opacity-30">
             {data.map(({ label, value }) => (
               <div
                 key={value}

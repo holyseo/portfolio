@@ -4,15 +4,17 @@ export function Experience() {
       id="experience"
       className="flex flex-col bg-red place-items-center text-white"
     >
-      <div className=" mb-16 bg-gradient-to-b from-blue-600 from-30% via-90% to-blue-400 bg-clip-text text-transparent uppercase font-extrabold text-5xl">
+      <div className=" mb-16 bg-gradient-to-b from-blue-600 from-30% via-90% to-blue-400 bg-clip-text text-transparent uppercase font-extrabold text-2xl md:text-3xl xl:text-5xl">
         Experience
       </div>
 
-      <div className=" flex flex-col gap-3 max-w-6xl px-2 text-lg">
+      <div className=" flex flex-col gap-3 max-w-6xl px-2 text-sm md:text-base xl:text-lg">
         <div className="flex flex-row flex-wrap justify-between items-start border-b-2 border-white border-opacity-50 p-2">
-          <div className="flex flex-row flex-wrap place-items-start gap-10 ">
-            <div className="text-red-600 font-bold text-xl">Northcoders</div>
-            <div className="font-bold ">
+          <div className="flex flex-row place-items-start gap-2 md:gap-5 xl:gap-10">
+            <div className="text-red-600 min-w-44 font-bold text-sm md:text-base xl:text-xl">
+              Northcoders
+            </div>
+            <div className="font-bold min-w-32">
               Junior Full-Stack Software Developer
             </div>
           </div>
@@ -44,11 +46,11 @@ export function Experience() {
         </div>
         <div className=" flex flex-col gap-3 mb-6">
           <div className="flex flex-row justify-between items-start gap-4 border-b-2 border-white border-opacity-50 py-2 my-5">
-            <div className="flex flex-row place-items-start gap-10 ">
-              <div className="text-amber-500 font-bold text-xl">
+            <div className="flex flex-row place-items-start gap-2 md:gap-5 xl:gap-10 ">
+              <div className="text-amber-500 min-w-44 font-bold text-sm md:text-base xl:text-xl">
                 Relational Peacebuilding Inititives
               </div>
-              <div className="font-bold ">Korea Program Manager</div>
+              <div className="font-bold min-w-32 ">Korea Program Manager</div>
             </div>
             <div className="w-fit text-sm">June 2020 to October 2023</div>
           </div>
@@ -73,16 +75,16 @@ export function Experience() {
         </div>
         <div className=" flex flex-col gap-3 mb-6">
           <div className="flex flex-row justify-between items-start  border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row place-items-start gap-10 ">
-              <div className=" text-sky-600 font-bold text-xl">
+            <div className="flex flex-row place-items-center gap-2 md:gap-5 xl:gap-10 ">
+              <div className=" text-sky-600 min-w-44 font-bold text-sm md:text-base xl:text-xl">
                 Career break
               </div>
-              <div className="font-bold ">
+              <div className="font-bold min-w-32 ">
                 Relocated to the UK with family from New Zealand
-                <span className="text-2xl brightness-150 self-end ">🇳🇿</span>
+                <span className="brightness-150 self-end ">🇳🇿</span>
               </div>
             </div>
-            <div className="w-fit text-sm">January 2016 to December 2018</div>
+            <div className="w-fit text-sm"> </div>
           </div>
           <div className=" font-light tracking-wide">
             <ul className=" indent-(-10) pl-10">
@@ -95,11 +97,11 @@ export function Experience() {
         </div>
         <div className=" flex flex-col gap-3 my-5">
           <div className="flex flex-row justify-between items-start border-b-2 border-white border-opacity-50 py-2">
-            <div className="flex flex-row place-items-start gap-10 ">
-              <div className="text-green-700 font-bold text-xl">
+            <div className="flex flex-row place-items-start gap-2 md:gap-5 xl:gap-10  ">
+              <div className="text-green-700 min-w-44 font-bold text-sm md:text-base xl:text-xl">
                 Community Pharmacy
               </div>
-              <div className="font-bold ">Pharmacist</div>
+              <div className="font-bold min-w-32 ">Pharmacist</div>
             </div>
             <div className="w-fit text-sm">January 2016 to December 2018</div>
           </div>

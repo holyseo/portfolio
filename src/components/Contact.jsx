@@ -7,7 +7,9 @@ export function Contact() {
       >
         <div className=" col-span-1 "></div>
         <div className=" col-span-3 text-white">
-          <span className=" text-5xl font-bold">Contact</span>
+          <span className=" text-2xl md:text-3xl xl:text-5xl font-bold">
+            Contact
+          </span>
           <div className="text-md py-8 max-w-4xl">
             I am highly skilled and committed to becoming a successful Software
             Developer. I have gained valuable experience and knowledge in
@@ -20,7 +22,7 @@ export function Contact() {
               <a href="https://www.linkedin.com/in/steven-seo/" target="_blank">
                 <img
                   className="max-w-8"
-                  src="./src/assets/LinkedIn_icon_circle.svg.png"
+                  src="assets/LinkedIn_icon_circle.svg.png"
                   alt="LinkedIn"
                 />
               </a>
@@ -29,7 +31,7 @@ export function Contact() {
               <a href="https://github.com/holyseo" target="_blank">
                 <img
                   className="max-w-8 rounded-full"
-                  src="./src/assets/github-mark-white.png"
+                  src="assets/github-mark-white.png"
                   alt="GitHub"
                 />
               </a>
@@ -38,8 +40,8 @@ export function Contact() {
               <a href="mailto:stevenbseo@icloud.com">
                 <img
                   className="max-w-8 rounded-full"
-                  src="./src/assets/Mail_(iOS).svg.png"
-                  alt="GitHub"
+                  src="assets/Mail_(iOS).svg.png"
+                  alt="email"
                 />
               </a>
             </div>
