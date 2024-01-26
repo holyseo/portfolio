@@ -209,7 +209,7 @@ export function Projects({ darkMode }) {
         }`}
       >
         <div className="flex flex-col">
-          <div className="flex flex-row flex-wrap place-items-center justify-between tracking-tight px-5 gap-x-5 cursor-pointe border-b-2 pb-5 border-gray-600 border-opacity-30">
+          <div className="flex flex-row flex-wrap place-items-center justify-start tracking-tight px-5 gap-x-5 cursor-pointe border-b-2 pb-5 border-gray-600 border-opacity-30">
             {data.map(({ label, value }) => (
               <div
                 key={value}

@@ -11,10 +11,12 @@ export function Contact() {
             Contact
           </span>
           <div className="text-md py-8 max-w-4xl">
-            I am highly skilled and committed to becoming a successful Software
-            Developer. I have gained valuable experience and knowledge in
-            industry best practices as a junior full-stack developer and web
-            developer.
+            I'm enthusiastic about discussing potential projects, both Front-end
+            and Back-end, exploring innovative solutions, or even just having a
+            casual conversation about the world of technology. Your inquiries
+            are always welcome, and I look forward to the opportunity to connect
+            with fellow enthusiasts and industry professionals alike. Let's
+            start a conversation and bring your ideas to life!
           </div>
 
           <div className=" max-w-16 flex flex-row justify-start gap-3">
