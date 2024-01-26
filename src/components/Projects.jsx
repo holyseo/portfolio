@@ -85,7 +85,7 @@ export function Projects({ darkMode }) {
         <>
           :
           <span className=" text-blue-600 font-bold">
-            <a href="https://github.com/holyseo/react-movies" target="_blank">
+            <a href="https://github.com/holyseo/realtime-chat" target="_blank">
               {} Realtime chat
             </a>
           </span>
@@ -255,7 +255,9 @@ export function Projects({ darkMode }) {
                         {skills}
                       </div>
                       <div>
-                        <span className=" font-extrabold text-base">Links</span>
+                        <span className=" font-extrabold text-base">
+                          Project link
+                        </span>
                         {ref_links}
                       </div>
                     </div>
