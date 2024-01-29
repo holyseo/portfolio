@@ -49,42 +49,40 @@ export function Contact() {
               </div>
             </div>
           </div>
-          <div className=" p-3 w-full md:w-4/5 lg:w-3/4 xl:w-1/3 bg-gray-400 rounded-sm ">
+          <div className=" px-3 py-5 w-full md:w-4/5 lg:w-3/4 xl:w-1/3 bg-gray-400 rounded-sm ">
             <form action="">
-              <div className="flex flex-col">
-                <label className="font-bold text-black py-1" htmlFor="name">
-                  Your Email
-                </label>
+              <div className=" flex flex-row justify-between gap-3">
                 <input
-                  className="shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
-                  placeholder="name@stevenbseo.tech"
+                  className="w-1/2 shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
+                  placeholder="Name"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <input
+                  className=" w-1/2 shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
+                  placeholder="Email address"
                   type="text"
                   name="email"
                   id="email"
                 />
               </div>
-              <div className="flex flex-col mt-3">
-                <label className="font-bold text-black py-1" htmlFor="name">
-                  Subject
-                </label>
+              <div className="flex flex-col mt-5">
                 <input
                   className="shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 
                   "
-                  placeholder="Let me know how I can help"
-                  type="email"
-                  name="email"
-                  id="email"
+                  placeholder="Subject"
+                  type="text"
+                  name="subject"
+                  id="subject"
                 />
               </div>
-              <div className="flex flex-col mt-3">
-                <label className="font-bold text-black py-1" htmlFor="message">
-                  Message
-                </label>
-                <input
+              <div className="flex flex-col mt-5">
+                <textarea
+                  rows={5}
                   className="shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 
                   "
-                  placeholder="Leave a comment..."
-                  type="text"
+                  placeholder="Message"
                   name="message"
                   id="message"
                 />
