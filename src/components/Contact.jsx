@@ -190,7 +190,7 @@ export function Contact() {
                   <div className="text-red-700">{warning.message}</div>
                 )}
               </div>
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row flex-wrap justify-between">
                 <div>
                   <button
                     type="submit"
