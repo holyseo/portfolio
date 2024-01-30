@@ -122,6 +122,35 @@ export function Experience() {
             </ul>
           </div>
         </div>
+        <div className=" flex flex-col gap-3 my-5">
+          <div className="flex flex-row justify-between items-start border-b-2 border-white border-opacity-50 py-2">
+            <div className="flex flex-row place-items-start gap-2 md:gap-5 xl:gap-10  ">
+              <div className=" text-yellow-300 min-w-44 font-bold text-sm md:text-base xl:text-xl">
+                Advanced Marketing Development Australia and New Zealand
+              </div>
+              <div className="font-bold min-w-32 ">
+                Web Developer (Frontend)
+              </div>
+            </div>
+            <div className="w-fit text-sm">January 2013 to September 2015</div>
+          </div>
+          <div className=" font-light tracking-wide">
+            <ul className=" indent-(-10) pl-10">
+              <li className=" list-disc list-outside ">
+                Enhanced frontend development for clients across various
+                sectors, including pharmacies and not-for-profits
+              </li>
+              <li className="list-disc list-outside">
+                Provided valuable insights for design and functionality
+                improvements, ensuring optimal user experience
+              </li>
+              <li className="list-disc list-outside">
+                Delivered ongoing aftercare support, assisting clients in
+                assessing and optimising their website performance
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
