@@ -1,4 +1,83 @@
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import "react-dotenv";
+import ReCAPTCHA from "react-google-recaptcha";
+import recaptcha from "react-google-recaptcha/lib/recaptcha";
+
 export function Contact() {
+  const formRef = useRef();
+  const recaptchaRef = useRef(null);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [warning, setWarning] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    reCaptcha: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+
+    setWarning({
+      ...warning,
+      [name]: "",
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const recaptchaVal = await recaptchaRef.current.getValue();
+    // console.log(recaptchaRef);
+    recaptchaRef.current.reset();
+
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          user_name: form.name,
+          user_email: form.email,
+          subject: form.subject,
+          message: form.message,
+          "g-recaptcha-response": recaptchaVal,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          setSuccess("Message sent successfully!");
+          setForm({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          setWarning({ ...warning, general: `Error: ${error.text}` });
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <footer>
       <div id="contact" className=" p-5 bg-neutral-700 bg-opacity-20 mt-20  ">
@@ -37,7 +116,7 @@ export function Contact() {
                     alt="GitHub"
                   />
                 </a>
-              </div>{" "}
+              </div>
               <div className="rounded-full ">
                 <a href="mailto:stevenbseo@icloud.com">
                   <img
@@ -50,22 +129,36 @@ export function Contact() {
             </div>
           </div>
           <div className=" px-3 py-5 w-full md:w-4/5 lg:w-3/4 xl:w-1/3 bg-gray-400 rounded-sm ">
-            <form action="">
+            <form ref={formRef} onSubmit={handleSubmit}>
               <div className=" flex flex-row justify-between gap-3">
-                <input
-                  className="w-1/2 shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
-                  placeholder="Name"
-                  type="text"
-                  name="name"
-                  id="name"
-                />
-                <input
-                  className=" w-1/2 shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
-                  placeholder="Email address"
-                  type="text"
-                  name="email"
-                  id="email"
-                />
+                <span className="w-1/2">
+                  <input
+                    className="w-full shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
+                    placeholder="Name"
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                  />
+                  {warning.name && (
+                    <div className="text-red-700 self-end ">{warning.name}</div>
+                  )}
+                </span>
+                <span className="w-1/2">
+                  <input
+                    className="w-full shadow-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1.5 "
+                    placeholder="Email address"
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                  />
+                  {warning.email && (
+                    <div className="text-red-700 self-end">{warning.email}</div>
+                  )}
+                </span>
               </div>
               <div className="flex flex-col mt-5">
                 <input
@@ -74,8 +167,13 @@ export function Contact() {
                   placeholder="Subject"
                   type="text"
                   name="subject"
-                  id="subject"
+                  value={form.subject}
+                  onChange={handleChange}
+                  required
                 />
+                {warning.subject && (
+                  <div className="text-red-700">{warning.subject}</div>
+                )}
               </div>
               <div className="flex flex-col mt-5">
                 <textarea
@@ -84,16 +182,45 @@ export function Contact() {
                   "
                   placeholder="Message"
                   name="message"
-                  id="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  required
                 />
+                {warning.message && (
+                  <div className="text-red-700">{warning.message}</div>
+                )}
               </div>
-              <div>
-                <button
-                  type="submit"
-                  className=" bg-blue-400 px-3 py-1 border-2 border-gray-600 rounded-md mt-5 hover:bg-blue-600"
-                >
-                  Submit
-                </button>
+              <div className="flex flex-row justify-between">
+                <div>
+                  <button
+                    type="submit"
+                    className=" bg-blue-400 px-3 py-1 border-2 border-gray-600 rounded-md mt-5 hover:bg-blue-600"
+                    onClick={() =>
+                      warning.reCaptcha === ""
+                        ? (warning.reCaptcha = "Please complete the reCAPTCHA.")
+                        : null
+                    }
+                  >
+                    {loading ? "Sending..." : "Send"}
+                  </button>
+                  {warning.reCaptcha !== null ? (
+                    <div className="text-red-700 mt-2 font-semibold">
+                      {warning.reCaptcha}
+                    </div>
+                  ) : null}
+                  {success !== "" ? (
+                    <div className="text-blue-700 font-semibold">{success}</div>
+                  ) : null}
+                </div>
+                <div className="mt-5">
+                  <ReCAPTCHA
+                    sitekey={import.meta.env.VITE_API_KEY}
+                    ref={recaptchaRef}
+                    onChange={(prev) =>
+                      setWarning({ ...prev, recaptcha: null })
+                    }
+                  />
+                </div>
               </div>
             </form>
           </div>
