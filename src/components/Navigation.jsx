@@ -7,7 +7,7 @@ export function Navigation({ darkMode, toggleDarkMode }) {
       <div className="flex flex-row justify-center items-center gap-x-48 flex-wrap  text-normal font-light tracking-wider">
         <div>
           <Link to="/">
-            <img className=" h-16" src="assets/logo.png" />
+            <img className=" h-16" src="assets/logo.png" alt="logo" />
           </Link>
         </div>
         <div className=" grid grid-cols-4 justify-items-center gap-16 p-5 ">

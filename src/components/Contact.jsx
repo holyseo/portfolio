@@ -194,7 +194,7 @@ export function Contact() {
                 <div>
                   <button
                     type="submit"
-                    className=" bg-blue-400 px-3 py-1 border-2 border-gray-600 rounded-md mt-5 hover:bg-blue-600"
+                    className=" bg-blue-600 px-3 py-1 border-2 border-gray-600 rounded-md mt-5 hover:bg-blue-800"
                     onClick={() =>
                       warning.reCaptcha === ""
                         ? (warning.reCaptcha = "Please complete the reCAPTCHA.")

@@ -17,7 +17,7 @@ export function Main() {
     <div>
       <div className=" max-w-5xl mx-auto px-14 flex flex-col pt-12 place-items-center gap-5">
         <div className=" text-white ">
-          <img src={"assets/memoji.png"} />
+          <img src={"assets/memoji.png"} alt="memoji" />
         </div>
         <div className="grid grid-cols place-items-center pt-8">
           <div className=" text-white rows-span text-center font-mono text-lg md:text-2xl xl:text-4xl font-extrabold tracking-normal">

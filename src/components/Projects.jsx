@@ -22,7 +22,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-600 font-bold">
+          <span className=" text-blue-800 font-bold">
             <a href="https://github.com/holyseo/news-api" target="_blank">
               {" "}
               News API,
@@ -53,7 +53,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-600 font-bold">
+          <span className=" text-blue-800 font-bold">
             <a href="https://github.com/holyseo/react-movies" target="_blank">
               {} Movie Explorer
             </a>
@@ -84,7 +84,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-600 font-bold">
+          <span className=" text-blue-800 font-bold">
             <a href="https://github.com/holyseo/realtime-chat" target="_blank">
               {} Realtime chat
             </a>
@@ -116,7 +116,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-600 font-bold">
+          <span className=" text-blue-800 font-bold">
             <a
               href="https://replit.com/@holyseo/NomadChallenge02-03June2023-1"
               target="_blank"
@@ -143,7 +143,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-600 font-bold">
+          <span className=" text-blue-800 font-bold">
             <a
               href="https://holyseo.github.io/kokoa-clone-2023/"
               target="_blank"
@@ -171,21 +171,21 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <ul className=" text-blue-600 font-bold my-1">
+          <ul className=" text-blue-800 font-bold my-1">
             <li>
               <a href="https://www.relationalpeacebuilding.org" target="_blank">
                 {} - Ralational Peacebuilding Initiatives
               </a>
             </li>
           </ul>
-          <ul className=" text-blue-600 font-bold my-1">
+          <ul className=" text-blue-800 font-bold my-1">
             <li>
               <a href="https://www.relationalresearch.org" target="_blank">
                 {} - Ralational Research
               </a>
             </li>
           </ul>
-          <ul className=" text-blue-600 font-bold my-1">
+          <ul className=" text-blue-800 font-bold my-1">
             <li>
               <a href="https://www.the-relationist.net" target="_blank">
                 {} - Ralationist
