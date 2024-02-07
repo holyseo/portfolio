@@ -43,14 +43,29 @@ export function Main() {
         </div>
       </div>
 
-      <div className="py-8 max-w-3xl mx-auto text-gray-300 px-5 text-center leading-1 text-sm md:leading-5 xl:text-lg xl:leading-7 font-light tracking-wider ">
-        Following a successful career in the NGO and Pharmacy sectors, I am now
-        seeking a career in Software Development. My academic achievements
-        include a Bachelor’s and Master’s degree in Information Science and a
-        Bachelor’s degree in Pharmacy. I am highly skilled and committed to
-        becoming a successful Software Developer. I have gained valuable
-        experience and knowledge in industry best practices as a junior
-        full-stack developer and web developer.
+      <div className="flex flex-col gap-5 py-8 max-w-4xl mx-auto text-gray-300 px-5 text-sm font-mono leading-1 md:leading-5 xl:text-lg xl:leading-7 ">
+        <div className="">
+          Following a successful career in the NGO and Pharmacy sectors, I am
+          now seeking a career in Software Development, with a specific focus on
+          becoming a Front End Software Developer. My academic achievements,
+          including a Master’s degree in Information Science, provide a solid
+          foundation for advancing software development.
+        </div>
+
+        <div>
+          While I have gained valuable experience and knowledge in industry best
+          practices as a junior full-stack developer, my journey has strongly
+          led me toward Front End Development because of my passion for
+          enhancing and optimising user experience and satisfaction.
+        </div>
+        <div>
+          My unique blend of academic qualifications, diverse experiences, and
+          dedication to Front End Development positions me as a promising
+          candidate for a successful career in Software Development. Moreover, I
+          have a strong interest in acquiring new technical stacks to maintain
+          ongoing adaptability in the ever-evolving field of software
+          development.
+        </div>
       </div>
       <div className="text-white grid grid-cols-5 md:py-5 xl:py-10">
         <div></div>
