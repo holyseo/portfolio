@@ -29,7 +29,7 @@ export function Main() {
               <span>.</span>
             </p>
             <p className=" leading-normal">
-              A fullstack developer building bridges between
+              A Frontend developer building bridges between
               <span className=" bg-gradient-to-r from-lime-500 from-20% via-60% to-blue-600 bg-clip-text text-transparent">
                 {} imagination
               </span>
