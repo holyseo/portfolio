@@ -22,7 +22,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-800 font-bold">
+          <span className="font-bold text-blue-800 ">
             <a href="https://github.com/holyseo/news-api" target="_blank">
               {" "}
               News API,
@@ -30,6 +30,35 @@ export function Projects({ darkMode }) {
             <a href="https://github.com/holyseo/react-movies" target="_blank">
               {" "}
               News Frontend
+            </a>
+          </span>
+        </>
+      ),
+    },
+    {
+      label: "Dashboard",
+      value: "dash",
+      desc: (
+        <>
+          : <span className="underline underline-offset-2">Frontend</span>{" "}
+          development project for a technical evaluation by a software company
+          based in Cambridgeshire. The goal of this task was to evaluate my
+          knowledge of fundamental web development concepts, my ability to
+          follow provided designs, and my capability to deliver a product that
+          matched the given instructions. An Adobe XD UI prototype was provided,
+          along with components, a color palette, and a font list to use for
+          this task."
+        </>
+      ),
+      skills: `: JavaScript, React, Vite, response design, HTML and TailwindCSS`,
+      src: "assets/dashboard.png",
+      ref_links: (
+        <>
+          :
+          <span className="font-bold text-blue-800 ">
+            <a href="https://28b-dashboard.netlify.app/" target="_blank">
+              {" "}
+              Live project
             </a>
           </span>
         </>
@@ -53,7 +82,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-800 font-bold">
+          <span className="font-bold text-blue-800 ">
             <a href="https://github.com/holyseo/react-movies" target="_blank">
               {} Movie Explorer
             </a>
@@ -84,7 +113,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-800 font-bold">
+          <span className="font-bold text-blue-800 ">
             <a href="https://github.com/holyseo/realtime-chat" target="_blank">
               {} Realtime chat
             </a>
@@ -116,7 +145,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-800 font-bold">
+          <span className="font-bold text-blue-800 ">
             <a
               href="https://replit.com/@holyseo/NomadChallenge02-03June2023-1"
               target="_blank"
@@ -143,7 +172,7 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <span className=" text-blue-800 font-bold">
+          <span className="font-bold text-blue-800 ">
             <a
               href="https://holyseo.github.io/kokoa-clone-2023/"
               target="_blank"
@@ -171,21 +200,21 @@ export function Projects({ darkMode }) {
       ref_links: (
         <>
           :
-          <ul className=" text-blue-800 font-bold my-1">
+          <ul className="my-1 font-bold text-blue-800 ">
             <li>
               <a href="https://www.relationalpeacebuilding.org" target="_blank">
                 {} - Ralational Peacebuilding Initiatives
               </a>
             </li>
           </ul>
-          <ul className=" text-blue-800 font-bold my-1">
+          <ul className="my-1 font-bold text-blue-800 ">
             <li>
               <a href="https://www.relationalresearch.org" target="_blank">
                 {} - Ralational Research
               </a>
             </li>
           </ul>
-          <ul className=" text-blue-800 font-bold my-1">
+          <ul className="my-1 font-bold text-blue-800 ">
             <li>
               <a href="https://www.the-relationist.net" target="_blank">
                 {} - Ralationist
@@ -199,7 +228,7 @@ export function Projects({ darkMode }) {
   ];
 
   return (
-    <div id="projects" className="flex flex-col place-items-center my-24 px-3">
+    <div id="projects" className="flex flex-col px-3 my-24 place-items-center">
       <div className=" bg-gradient-to-b from-orange-600 from-30% via-90% to-orange-400 bg-clip-text text-transparent uppercase font-extrabold text-2xl md:text-3xl xl:text-5xl p-5">
         Projects
       </div>
@@ -209,7 +238,7 @@ export function Projects({ darkMode }) {
         }`}
       >
         <div className="flex flex-col">
-          <div className="flex flex-row flex-wrap place-items-center justify-start tracking-tight px-5 gap-x-5 cursor-pointe border-b-2 pb-5 border-gray-600 border-opacity-30">
+          <div className="flex flex-row flex-wrap justify-start px-5 pb-5 tracking-tight border-b-2 border-gray-600 place-items-center gap-x-5 cursor-pointe border-opacity-30">
             {data.map(({ label, value }) => (
               <div
                 key={value}
@@ -231,37 +260,37 @@ export function Projects({ darkMode }) {
                 <div
                   key={value}
                   value={value}
-                  className=" p-3 rounded-2xl text-gray-800 text-left"
+                  className="p-3 text-left text-gray-800 rounded-2xl"
                 >
                   <div className="flex flex-row flex-wrap justify-center">
-                    <div className="p-3 max-w-lg hover:scale-110 duration-700">
+                    <div className="max-w-lg p-3 duration-700 hover:scale-110">
                       <img
                         src={src}
                         alt=""
                         className="rounded-lg drop-shadow-2xl "
                       />
                     </div>
-                    <div className="p-3 max-w-xl flex flex-col gap-6 text-sm">
+                    <div className="flex flex-col max-w-xl gap-6 p-3 text-sm">
                       <div>
-                        <span className="font-extrabold text-base">
+                        <span className="text-base font-extrabold">
                           Description
                         </span>
                         {desc}
                       </div>
                       <div>
-                        <span className=" font-extrabold text-base">
+                        <span className="text-base font-extrabold ">
                           Tech stacks
                         </span>
                         {skills}
                       </div>
                       <div>
-                        <span className=" font-extrabold text-base">
+                        <span className="text-base font-extrabold ">
                           Project link
                         </span>
                         {ref_links}
                       </div>
                     </div>
-                    <div className="p-3 max-w-xl"></div>
+                    <div className="max-w-xl p-3"></div>
                   </div>
                 </div>
               ) : null
