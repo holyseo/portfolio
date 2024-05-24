@@ -15,12 +15,12 @@ export function Main() {
 
   return (
     <div>
-      <div className="flex flex-col max-w-5xl gap-5 pt-12 mx-auto  px-14 place-items-center">
+      <div className="flex flex-col max-w-5xl gap-5 pt-12 mx-auto px-14 place-items-center">
         <div className="text-white ">
           <img src={"assets/memoji.png"} alt="memoji" />
         </div>
         <div className="grid pt-8 grid-cols place-items-center">
-          <div className="font-mono text-lg font-extrabold tracking-normal text-center text-white  rows-span md:text-2xl xl:text-4xl">
+          <div className="font-mono text-lg font-extrabold tracking-normal text-center text-white rows-span md:text-2xl xl:text-4xl">
             <p className="py-5 ">
               Hi! I'm
               <span className=" bg-gradient-to-r from-yellow-500 from-30% via-60% to-rose-400 bg-clip-text text-transparent">
@@ -29,7 +29,7 @@ export function Main() {
               <span>.</span>
             </p>
             <p className="leading-normal ">
-              A Frontend developer building bridges between
+              A Full Stack developer building bridges between
               <span className=" bg-gradient-to-r from-lime-500 from-20% via-60% to-blue-600 bg-clip-text text-transparent">
                 {} imagination
               </span>
@@ -90,7 +90,7 @@ export function Main() {
 
         <div className="flex flex-row flex-wrap justify-center px-16 text-stone-300 gap-x-10 gap-y-3">
           {img_src.map((i, index) => (
-            <div key={index} className="rounded-lg  hover:animate-pulse">
+            <div key={index} className="rounded-lg hover:animate-pulse">
               <img
                 className=" w-12 bg-white rounded-lg p-0.5"
                 src={`assets/${i}`}
