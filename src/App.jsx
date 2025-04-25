@@ -17,8 +17,7 @@ function App() {
 
   return (
     <BrowserRouter
-      // basename={process.env.NODE_ENV === "development" ? "/portfolio/" : ""}
-      basename="portfolio"
+    // basename={process.env.NODE_ENV === "development" ? "/portfolio/" : ""}
     >
       <div className={`${darkMode ? "bg-neutral-900 " : " bg-gray-600"}`}>
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
